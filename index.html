@@ -1,74 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Application Form</title>
-<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <header>
-    <h2>Application Form</h2>
-  </header>
-  <main>
-    <form action="">
-      <div class="form-group">        
-        <label for="firstName">First name:</label>
-        <input type="text" name="firstName" id="firstName" placeholder="eg. John">
-        
-        <label for="lastName">Last name:</label>
-        <input type="text" name="lastName" id="lastName" placeholder="e.g. Doe">
-      </div>
-      
-      
-      <div class="form-group">
-        <label for="dob">Date of Birth</label>
-        <input type="date" name="dob" id="dob">
-        
-        <label for="age">Age</label>
-        <input type="number" name="age" id="age">
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <header>
+          <h2>Application Form</h2>
+        </header>
+        <form action="">
+          <div class="form-group">
+            <label for="firstName">First name:</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="eg. John"
+            />
 
-      <div class="form-group">
-        <label for="gender">Gender</label>
-        <select name="gender" id="gender">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
+            <label for="lastName">Last name:</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="e.g. Doe"
+            />
+          </div>
 
-        <label for="email">Email Address:</label>
-        <input type="email" name="email" id="email">
-      </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" />
 
-      <div class="form-group">
-        <span>Positions Available:</span>
-        <input type="radio" name="positions" id="juniorDev">
-        <label for="juniorDev">Junior Developer</label>
-        <input type="radio" name="positions" id="midDev">
-        <label for="midDev">Mid-level Developer</label>
-        <input type="radio" name="positions" id="seniorDev">
-        <label for="seniorDev">Senior Developer</label>
-      </div>
+            <label for="age">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Enter your age here"
+            />
+          </div>
 
-      <div class="form-group">
-        <span>Programming Languages:</span>
-        <input type="checkbox" name="proLang" id="html">
-        <label for="html">HTML</label>
-        <input type="checkbox" name="proLang" id="javascript">
-        <label for="javascript">Javascript</label>
-        <input type="checkbox" name="proLang" id="java" value="java">
-        <label for="java">Java</label>
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <label for="confirmPassword">Confirm Password</label>
-        <input type="password" name="confirmPassword" id="confirmPassword">
-      </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
 
-      <input type="submit" value="Submit">
-      <input type="reset" value="Reset">
-    </form>
-  </main>
-</body>
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="you@example.com"
+            />
+          </div>
+
+          <div class="form-group-options">
+            <span>Positions Available:</span><br />
+            <input type="radio" name="positions" id="juniorDev" />
+            <label for="juniorDev">Junior Developer</label>
+            <input type="radio" name="positions" id="midDev" />
+            <label for="midDev">Mid-level Developer</label>
+            <input type="radio" name="positions" id="seniorDev" />
+            <label for="seniorDev">Senior Developer</label>
+          </div>
+
+          <div class="form-group-options">
+            <span>Programming Languages:</span> <br />
+            <input type="checkbox" name="proLang" id="html" />
+            <label for="html">HTML</label>
+            <input type="checkbox" name="proLang" id="javascript" />
+            <label for="javascript">Javascript</label>
+            <input type="checkbox" name="proLang" id="java" value="java" />
+            <label for="java">Java</label>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="************"
+            />
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+              placeholder="************"
+            />
+          </div>
+
+          <div class="btn-group">
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
